@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#DBFBFB"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/sell_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="product name"
+        android:textStyle="bold"
+        android:textSize="21dp"/>
+    <TextView
+        android:id="@+id/sell_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="product name"
+        android:layout_marginBottom="6dp"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sell_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price: 232 TK"
+            android:layout_marginRight="20dp"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/sell_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="qty: 300"
+            android:textSize="17dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sellAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="total amount: 232 TK"
+            android:layout_marginRight="20dp"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/sellDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:text="date: 32/33/2101"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

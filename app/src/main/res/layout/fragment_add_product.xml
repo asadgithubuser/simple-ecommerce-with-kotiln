@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="50dp"
+    android:layout_marginHorizontal="15dp"
+    tools:context=".Fragments.AddProduct">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Product :"
+            android:textColor="@color/teal_700"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="product name"
+                android:textColorHint="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/brand_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="brand name"
+                android:textColorHint="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginBottom="9dp"
+            android:orientation="horizontal">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/product_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="price in TK"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/black"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/product_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Qty"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/black"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/p_add_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12/04/2021"
+                android:inputType="none"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:cursorVisible="false"
+                android:textColorHint="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginVertical="40dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_product"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:text="Add Product"
+                android:layout_marginRight="7dp"
+                android:textAllCaps="false"
+                android:textSize="17dp"
+                android:backgroundTint="@color/teal_700"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_button_bg"
+                android:paddingHorizontal="7dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_teked_btn"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="7dp"
+                android:text="Cancel"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textSize="17dp"
+                android:backgroundTint="@color/teal_700"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_button_bg"
+                android:paddingHorizontal="7dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
